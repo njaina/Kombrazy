@@ -4,6 +4,7 @@ import { LeftsideLayout } from "./LeftsideLayout";
 import { RightsideLayout } from "./RightSideLayout";
 import ItemCard from "../ItemCard";
 import ProfileCard from "../ProfileCard";
+import PlayerCard from "../PlayerCard";
 
 const MainComponent = () => {
   const [middleContent, setMiddleContent] = useState<React.ReactNode>(<></>);
@@ -34,6 +35,12 @@ const MainComponent = () => {
               subtitle="This is my subtitle"
               status="Accepted"
               content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illum eius dicta. "
+            />
+            <PlayerCard 
+              first_name="Djordje"
+              last_name="Petrovic"
+              number="12"
+              position="Goalkeeper"
             />
           </div>
           ,
