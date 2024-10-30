@@ -47,13 +47,13 @@ const MainComponent = () => {
         );
         break;
       case "reports":
-        setMiddleContent(<div>Reports Content</div>);
+        setMiddleContent(<div><p className="text-5xl underline text-white uppercase text-center">Reports Content</p></div>);
         break;
       case "settings":
-        setMiddleContent(<div>Settings Content</div>);
+        setMiddleContent(<div> <p  className="text-5xl underline text-white uppercase text-center"> Settings Content</p></div>);
         break;
       default:
-        setMiddleContent(<div>Select an option from the menu</div>);
+        setMiddleContent(<div> <p  className="text-5xl underline text-white uppercase text-center"> Select an option from the menu</p> </div>);
     }
   };
 

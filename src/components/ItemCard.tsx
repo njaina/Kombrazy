@@ -14,7 +14,7 @@ const ItemCard: React.FC<ItemProps> = ({
   content,
 }) => {
   return (
-    <div className="rounded w-60 border shadow shadow-gray-400">
+    <div className="rounded w-60 border shadow bg-gray-100">
       <div className="flex gap-2 p-2 bg-gray-400 bg-opacity-15 items-center">
         <img
           src={ItemBg}
