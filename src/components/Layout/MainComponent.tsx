@@ -4,7 +4,8 @@ import { LeftsideLayout } from "./LeftsideLayout";
 import { RightsideLayout } from "./RightSideLayout";
 import ItemCard from "../ItemCard";
 import ProfileCard from "../ProfileCard";
-import { Welcoming } from "./Welcoming";
+import PlayerCard from "../PlayerCard";
+
 
 const MainComponent = () => {
   const [middleContent, setMiddleContent] = useState<React.ReactNode>(<></>);
@@ -33,17 +34,25 @@ const MainComponent = () => {
               status="Accepted"
               content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illum eius dicta. "
             />
-          </div>,
+
+            <PlayerCard 
+              first_name="Djordje"
+              last_name="Petrovic"
+              number="12"
+              position="Goalkeeper"
+            />
+          </div>
         );
         break;
       case "reports":
-        setMiddleContent(<div>Reports Content</div>);
+        setMiddleContent(<div><p className="text-5xl underline text-white uppercase text-center">Reports Content</p></div>);
         break;
       case "settings":
-        setMiddleContent(<div>Settings Content</div>);
+        setMiddleContent(<div> <p  className="text-5xl underline text-white uppercase text-center"> Settings Content</p></div>);
         break;
       default:
-        setMiddleContent(<Welcoming />);
+
+        setMiddleContent(<div> <p  className="text-5xl underline text-white uppercase text-center"> Select an option from the menu</p> </div>);
     }
   };
 
