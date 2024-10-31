@@ -6,14 +6,13 @@ import ItemCard from "../ItemCard";
 import ProfileCard from "../ProfileCard";
 import PlayerCard from "../PlayerCard";
 
-
 const MainComponent = () => {
   const [middleContent, setMiddleContent] = useState<React.ReactNode>(<></>);
 
   const menuOptions = [
     { label: "Cards", value: "Cards" },
-    { label: "Reports", value: "reports" },
-    { label: "Settings", value: "settings" },
+    { label: "Buttons", value: "Buttons" },
+    { label: "Inputs", value: "Inputs" },
   ];
 
   const navigationOptions = [
@@ -35,24 +34,45 @@ const MainComponent = () => {
               content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illum eius dicta. "
             />
 
-            <PlayerCard 
+            <PlayerCard
               first_name="Djordje"
               last_name="Petrovic"
               number="12"
               position="Goalkeeper"
             />
-          </div>
+          </div>,
         );
         break;
       case "reports":
-        setMiddleContent(<div><p className="text-5xl underline text-white uppercase text-center">Reports Content</p></div>);
+        setMiddleContent(
+          <div>
+            <p className="text-5xl underline text-white uppercase text-center">
+              Reports Content
+            </p>
+          </div>,
+        );
         break;
       case "settings":
-        setMiddleContent(<div> <p  className="text-5xl underline text-white uppercase text-center"> Settings Content</p></div>);
+        setMiddleContent(
+          <div>
+            {" "}
+            <p className="text-5xl underline text-white uppercase text-center">
+              {" "}
+              Settings Content
+            </p>
+          </div>,
+        );
         break;
       default:
-
-        setMiddleContent(<div> <p  className="text-5xl underline text-white uppercase text-center"> Select an option from the menu</p> </div>);
+        setMiddleContent(
+          <div>
+            {" "}
+            <p className="text-5xl underline text-white uppercase text-center">
+              {" "}
+              Select an option from the menu
+            </p>{" "}
+          </div>,
+        );
     }
   };
 
