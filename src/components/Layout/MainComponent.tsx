@@ -43,6 +43,7 @@ const MainComponent = () => {
           </div>,
         );
         break;
+
       case "Buttons":
         setMiddleContent(
           <div>
@@ -52,6 +53,7 @@ const MainComponent = () => {
           </div>,
         );
         break;
+
       case "Inputs":
         setMiddleContent(
           <div>
@@ -64,6 +66,7 @@ const MainComponent = () => {
       default:
         setMiddleContent(
           <div>
+
             <p className="text-1xl underline text-white uppercase text-center">
               Select an option from the menu
             </p>
