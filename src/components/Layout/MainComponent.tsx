@@ -5,6 +5,7 @@ import { RightsideLayout } from "./RightSideLayout";
 import ItemCard from "../ItemCard";
 import ProfileCard from "../ProfileCard";
 import PlayerCard from "../PlayerCard";
+import { Welcoming } from "./Welcoming";
 
 const MainComponent = () => {
   const [middleContent, setMiddleContent] = useState<React.ReactNode>(<></>);
@@ -64,14 +65,7 @@ const MainComponent = () => {
         );
         break;
       default:
-        setMiddleContent(
-          <div>
-
-            <p className="text-1xl underline text-white uppercase text-center">
-              Select an option from the menu
-            </p>
-          </div>,
-        );
+        setMiddleContent(<Welcoming />);
     }
   };
 
