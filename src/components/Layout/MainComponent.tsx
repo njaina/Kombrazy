@@ -43,22 +43,20 @@ const MainComponent = () => {
           </div>,
         );
         break;
-      case "reports":
+      case "Buttons":
         setMiddleContent(
           <div>
             <p className="text-5xl underline text-white uppercase text-center">
-              Reports Content
+              Button component content
             </p>
           </div>,
         );
         break;
-      case "settings":
+      case "Inputs":
         setMiddleContent(
           <div>
-            {" "}
             <p className="text-5xl underline text-white uppercase text-center">
-              {" "}
-              Settings Content
+              Input component content
             </p>
           </div>,
         );
