@@ -7,7 +7,7 @@ interface ItemProps {
   content: string;
 }
 
-const ItemCard: React.FC<ItemProps> = ({ 
+const ItemCard: React.FC<ItemProps> = ({
   title,
   subtitle,
   status,
@@ -22,8 +22,8 @@ const ItemCard: React.FC<ItemProps> = ({
           className="h-11 w-11 bg-black rounded-full object-cover border border-opacity-55 border-gray-300"
         />
         <div className="text-left">
-          <div className="font-bold">{title}</div>
-          <div className="text-xs">{subtitle}</div>
+          <div className="font-bold text-blue-900">{title}</div>
+          <div className="text-xs text-blue-800">{subtitle}</div>
         </div>
       </div>
       <div className="overflow-hidden h-28 bg-red-400 bg-[url('/img/hero-pattern.svg')]">
@@ -35,14 +35,14 @@ const ItemCard: React.FC<ItemProps> = ({
       </div>
       <div className="p-2">
         <div className="flex justify-end">
-          <div className="cursor-pointer rounded px-2 py-1 border text-xs border-green-900 bg-green-600 text-white hover:bg-green-400 duration-300">
+          <div className="cursor-pointer rounded  px-2 py-1 border text-xs border-green-700 bg-green-600 text-white hover:bg-green-400 duration-300">
             {status}
           </div>
         </div>
-        <div className="text-left"> {content} </div>
+        <div className="text-left text-blue-800"> {content} </div>
         <div className="flex justify-end mt-2 gap-2">
-          <button className="">Edit</button>
-          <button className="">Delete</button>
+          <button className="bg-green-600">Edit</button>
+          <button className="bg-red-600">Delete</button>
         </div>
       </div>
     </div>
